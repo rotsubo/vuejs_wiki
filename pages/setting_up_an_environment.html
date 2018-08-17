@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="js" dir="ltr">
+  <head>
+    <script src="../common_component/head.js"></script>
+  </head>
+  <body>
+    <h1>Vue.js wiki</h1>
+    <!-- サイドバー -->
+    <nav>
+       <script src="../common_component/side_menu.js"></script>
+    </nav>
+
+    <!-- メイン -->
+    <main>
+        <h2>環境構築</h2>
+        <div class="content">
+        <p>ちょっと試してみたいだけという人は、CDNを読み込めば簡単にVueが使えます。</p>
+        <p>以下は(2018/08/16)時点での最新verです。</p>
+        <p><span class="sourceCode"><script src="https://gist.github.com/rotsubo/d2011d05c597425b22d43fea02f3a32f.js"></script></span></p>
+        </div>
+        <div class="content">
+          <p>Vue.jsをインストールするのにnpmを使用するため、Node.jsをインストールします。</p>
+          <p>使用するOSを選んでインストーラーをダウンロードしてください</p>
+          <p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+          <img src="../img/for_setting_up_an_environment/nodejs_install_1.png" alt="nodejs_install">
+          </div>
+          <div class="content">
+          <p>ダウンロードしたら実行します。</p>
+          <p>基本的に設定は全てデフォルトで問題ありません。</p>
+          <p>完了したら、コマンドプロンプトを開いてインストールが上手くいってるか確認します。</p>
+          <p>画像のように表示されていればOKです。</p>
+          <p><pre>node --version</pre></p>
+          <img src="../img/for_setting_up_an_environment/nodejs_install_2.png" alt="nodejs_install">
+          </div>
+          <div class="content">
+          <p>同時にnpmもインストールされているのでこちらも確認します。</p>
+          <p><pre>npm --version</pre></p>
+          <img src="../img/for_setting_up_an_environment/nodejs_install_3.png" alt="nodejs_install">
+          </div>
+          <div class="content">
+          <p>続いてVueをインストールしていきます。</p>
+          <p>以下のコマンドを実行してvue-cliをグローバルにインストールします。</p>
+          <p><pre>npm install -g vue-cli</pre></p>
+          </div>
+          <div class="content">
+          <p>実行するとプロジェクト作成に必要なファイル等のテンプレートをインストールしてくれます。</p>
+          <p><pre>vue --version</pre>　vueのversionが確認できます</p>
+          </div>
+          <div class="content">
+          <p>ここまでで、プロジェクトを立てるための準備は完了です。</p>
+          <p>それではプロジェクトを作成していきます。</p>
+          <p>以下のコマンドを任意のディレクトリに移動してから実行します。</p>
+          <p><pre>vue init webpack <プロジェクト名></pre></p>
+          </div>
+          <div class="content">
+          <p>対話形式で色々聞かれますが、全てEnterで進めて特に問題ありません。</p>
+          <p>実行完了すると実行したディレクトリに<プロジェクト名>フォルダが作成されます。</p>
+          <p>中身はこんな感じ。</p>
+          <img src="../img/for_setting_up_an_environment/nodejs_install_4.png" alt="nodejs_install">
+          </div>
+          <div class="content">
+          <p><プロジェクト名>フォルダをカレントディレクトリに指定して <pre>npm run dev</pre> を実行します。</p>
+          <p>以下のようになればビルドできているので、<a href="http://localhost:8080">http://localhost:8080</a>を開いてみてください。</p>
+          <img src="../img/for_setting_up_an_environment/nodejs_install_5.png" alt="nodejs_install">
+          </div>
+          <div class="content">
+          <p>Welcome to Your Vue.js App　のページが開けば成功です。</p>
+          <img src="../img/for_setting_up_an_environment/nodejs_install_6.png" alt="nodejs_install">
+          </div>
+    </main>
+
+    <linK rel="stylesheet" type="text/css" href="../css/style.css">
+  </body>
+</html>
